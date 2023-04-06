@@ -1,0 +1,20 @@
+.MessagesHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Info{
+    display: flex;
+}
+.buttons{
+    display: flex;
+   
+}

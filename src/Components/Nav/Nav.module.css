@@ -1,0 +1,26 @@
+.nav{
+    position: fixed;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.menuList{
+    margin-top: 65px;   
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.logOut{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.profIcon{
+    width: 40px;
+    border-radius: 30px;
+}

@@ -1,0 +1,43 @@
+.Messages{
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MessageItemHeader{}
+
+.MessagesItemMe{   
+    display: flex;
+    justify-content: flex-start;   
+   flex-direction: row-reverse;    
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+   
+}
+
+.MessagesItemMe div{
+    padding: 10px;
+    border-radius: 30px;
+    background-color:rgba(71, 108, 255, 1);
+    color: #FFFFFF; 
+    
+}
+
+
+
+.MessagesItemYou{    
+    display: flex;    
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.MessagesItemYou div{
+    padding: 10px;
+    border-radius: 30px;
+    background-color:rgba(105, 105, 105, 1);
+    color: #FFFFFF;
+}
+

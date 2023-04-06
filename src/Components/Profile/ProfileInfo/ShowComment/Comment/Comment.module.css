@@ -1,0 +1,12 @@
+.com{
+    padding: 10px;
+    background-color:#d5d1d1;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.comWriterName{
+    font-weight: bold;
+}

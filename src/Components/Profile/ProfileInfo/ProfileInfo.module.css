@@ -1,0 +1,56 @@
+.ProfileInfo{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25); 
+    border-radius: 30px;
+    color:#696969;
+}
+
+.profPosts{
+    font-size: 20px;
+    margin-bottom: 10px;
+  
+    
+}
+
+.profImg{
+    margin: 0 auto;
+}
+
+.likeComCount{
+    margin-top: 10px;
+    padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+border-bottom: 1px solid #696969;
+border-top: 1px solid #696969;
+
+}
+
+.likeComChange{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dislikeButton{
+
+}
+
+.dislike{
+    color: rgb(16, 81, 104);
+}
+
+.comments{
+    margin-top: 10px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

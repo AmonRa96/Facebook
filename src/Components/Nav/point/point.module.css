@@ -1,0 +1,10 @@
+.point{
+  margin-bottom: 33px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #212121;
+  cursor: pointer;
+}

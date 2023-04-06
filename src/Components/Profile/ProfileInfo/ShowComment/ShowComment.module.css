@@ -1,0 +1,19 @@
+.commentFooter{
+margin-top: 30px;
+}
+
+.commentInput{
+    margin-right: 5px;
+    padding: 10px;
+    color:#696969 ;
+    border: 1px solid #696969;
+    border-radius: 30px;
+}
+
+.buttonComment{
+    padding: 10px;
+    border: 1px solid #696969;
+    border-radius: 30px;
+    background-color:#d5d1d1 ;
+    color: white;
+}
