@@ -17,11 +17,12 @@ export const Nav = ()=>{
   });
   const auth = useSelector((state)=>{
     return state.app.isAuth;
-  })
+  });
   const dispatch = useDispatch();
   const handleLogout =() =>{
-    dispatch({type:SET_LOGOUT, payload:false})
-  }
+    dispatch({type:SET_LOGOUT, payload:false});
+  };
+
   return (
     <nav className={classes.nav}>
       <div>
@@ -44,11 +45,9 @@ export const Nav = ()=>{
       <NavLink to="/login" className={navData => navData.isActive? classes.active : classes.point}>
       </NavLink>
       {auth? <button onClick={handleLogout} className={classes.logOut}>
-          <img src ={profData?.photos?.small} className={classes.profIcon} alt="profPic"/>
-          <img src={LogOut}  alt="logout"/>
-        </button>:null}
-       
-    
+        <img src ={profData?.photos?.small} className={classes.profIcon} alt="profPic"/>
+        <img src={LogOut}  alt="logout"/>
+      </button>:null}    
     </nav>
   );
 };

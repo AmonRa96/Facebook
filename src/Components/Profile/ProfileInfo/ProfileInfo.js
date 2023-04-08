@@ -38,6 +38,7 @@ export const ProfileInfo = ({id,img,posts,likes,comments}) =>{
   const handleCHange = ()=>{
     setShowComment(current=>!current);
   };
+  
  
 
   return(
@@ -46,8 +47,7 @@ export const ProfileInfo = ({id,img,posts,likes,comments}) =>{
       <img className={classes.profImg} src={img} alt="icon" width="900px"/>
       <div className={classes.likeComCount}>
         <div><img src={likeIcon} alt="icon" width="30px"/> {likesCount}</div>
-        <div> comments {comments.length}</div>       
-
+        <div> comments {comments.length}</div> 
       </div>
       <div className={classes.likeComChange}>
         { liked?           

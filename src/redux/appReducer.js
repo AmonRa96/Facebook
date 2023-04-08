@@ -18,22 +18,21 @@ export const initialApp = {
 
 export const appReducer = (state = initialApp,{type,payload}) =>{
 
-  console.log(payload,'paupupupup')
   switch(type){  
   case SET_USER_DATA:
     return{
       ...state,
       id:payload.id, 
-      email:payload.values.email,
-      login:payload.values.login ,  
+      email:payload.email,
+      login:payload.login ,  
       isAuth:payload.payload,
     };
   case SET_LOGIN_SAGA:
     return{
       ...state,
      
-      email:payload.values.email,
-      login:payload.values.login ,
+      email:payload.email,
+      login:payload.login ,
       rememberMe:true,
       isAuth:true  
     };

@@ -10,6 +10,7 @@ import { SET_MY_PROFILE,ON_ADD_PHOTO,SET_STATUS,GET_STATUS } from '../../redux/c
 export const Profile = () =>{
   const statusData = useSelector(state=>state.profile.status);
   const[status, setStatus] = useState('');
+  const[statusInput,setStatusInput] = useState(false);
   const{userID} = useParams();
   const dispatch = useDispatch();
 
@@ -36,6 +37,9 @@ export const Profile = () =>{
     e.preventDefault();
     dispatch({type: SET_STATUS, payload:{status,userID}});
   };
+  const handleStatusInput = ()=>{
+    setStatusInput(current => !current);
+  };
 
   return (
     <div className={classes.Profile}>
@@ -43,9 +47,9 @@ export const Profile = () =>{
         <div className={classes.profName}>{profData?.fullName}</div>
         <img  className={classes.profilePicture} src={profData?.photos?.large||profDefault} width="600px" alt="ff"/>      
         {userID==='27183' ? <input type="file" id="photo" onChange={onHandleChange}/>:null}
-        <div>{statusData}</div>
-        <input type="text" placeholder="Type your status here..." onChange={(e)=>setStatus(e.target.value)}/>
-        <button onClick={handleStatusSubmit}>Save</button>
+        <button onDoubleClick={handleStatusInput}>{statusData}</button >
+        {statusInput? <div><input type="text" placeholder="Type your status here..." onChange={(e)=>setStatus(e.target.value)}/> <button onClick={handleStatusSubmit}>Save</button></div>:null}
+       
       </div>
       <div>
         {userID==='27183' ?mappedInfos:null}

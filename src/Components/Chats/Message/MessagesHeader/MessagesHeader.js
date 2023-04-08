@@ -3,8 +3,7 @@ import Phone from '../../../../Pics/call.png';
 import video from '../../../../Pics/video.png';
 import vector from '../../../../Pics/Vector.png';
 
-export const MessagesHeader = ({name,img}) =>{
-  
+export const MessagesHeader = ({name,img}) =>{  
   return(
     <div className={classes.MessagesHeader}>
       <div className={classes.Info}>

@@ -3,8 +3,19 @@ import but2 from '../../../../Pics/but2.png';
 import but3 from '../../../../Pics/but3.png';
 import but4 from '../../../../Pics/but4.png';
 import classes from './MessageFooter.module.css';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { onAdd } from '../../../../redux/messagesReducer';
 
-export const MessageFooter = ({value,setValue,handleButtonClick}) =>{
+export const MessageFooter = ({name}) =>{
+  const[value,setValue] = useState('');
+  const dispatch = useDispatch();
+  
+  const handleButtonClick = () =>{
+    dispatch(onAdd(value,name));
+    setValue('');
+  };
+
   return(      
     <div className={classes.footerChat}>          
       <button><img src={but1} alt="but"/></button>
@@ -16,12 +27,3 @@ export const MessageFooter = ({value,setValue,handleButtonClick}) =>{
     </div>
   );
 };
-
-
-
-
-
-
-
-
-

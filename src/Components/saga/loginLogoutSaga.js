@@ -19,9 +19,7 @@ export function* authWatcher(){
 
 
 function* loginWorker({payload}) {
-console.log(payload.value)
   const response = yield loginAPI.login(payload.values.email,payload.values.password,true,payload.value); 
-  console.log(response,'respo')
   if(response.data.resultCode===0){
     yield put({type:SET_LOGIN_SAGA,payload:payload});
   } else{

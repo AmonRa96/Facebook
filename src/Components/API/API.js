@@ -8,7 +8,6 @@ export const instance= axios.create({
   }
 });
 
-
 export const profileAPI = {
   getProfile(userID=27183){
     return instance.get(`profile/${userID}`);

@@ -18,12 +18,12 @@ export const Friends = () =>{
     dispatch({type:SET_USERS});
    
   },[]);
-  const friend = friends.map((f)=><Friend key={f.id} id={f.id} name={f.name} img={f.photos.large} />)
+  
   return(
     <div>
       <div className={classes.friendsCount}>Friends: {friends.length}</div>
       <div className={classes.Friends}>     
-        {friend}
+        <Friend/>
       </div>
     </div>
   );
